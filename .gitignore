@@ -1,0 +1,5 @@
+# Local Netlify folder
+.netlify
+node_modules
+design_specs
+gen_tokens.py
