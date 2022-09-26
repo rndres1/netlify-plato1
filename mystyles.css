@@ -1,0 +1,338 @@
+/* Common css across all pages */
+
+html,
+body {
+  background-color: #e9f8fc;
+}
+
+button {
+  margin: 24px 0px;
+  background-color: #7D4AD4;
+  border-radius: 4px;
+  padding: 12px;
+  color: #fff;
+  width: 198px;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: "CabinetGrotesk";
+  border: 1px solid #7D4AD4;
+}
+
+button:disabled {
+  opacity: 0.5;
+}
+
+button:focus {
+  outline: none;
+}
+
+.loading {
+  display: none;
+  width: 200px;
+  height: 200px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.loader {
+  border: 8px solid #fff;
+  border-radius: 10%;
+  width: 30px;
+  height: 30px;
+  animation: spin 2s linear infinite;
+}
+
+#resultText {
+  /*   -moz-user-select: none;  
+    -webkit-user-select: none;  
+    -ms-user-select: none;  
+    -o-user-select: none;  
+    user-select: none; */
+    white-space: pre-wrap;
+  }
+  
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* CSS related to Auth Page */
+
+#authPage {
+  display: block;
+}
+
+.request-access-container {
+  display: flex;
+  margin-top: 36px;
+  justify-content: flex-end;
+}
+
+.request-access-text-container {
+  display: flex;
+  width: 165px;
+  height: 46px;
+  border-radius: 4px;
+  font-family: "Nunito";
+  font-size: 16px;
+  font-weight: bold;
+  color: #7d4ad4;
+  align-items: center;
+  justify-content: center;
+  border: solid 1.5px #7d4ad4;
+}
+
+.auth-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 32px auto;
+  background: #fff;
+  border-radius: 4px;
+  width: 80%;
+  padding: 24px 36px;
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.16), -2px 2px 4px 0 rgba(0, 0, 0, 0.16);
+}
+
+#passcode {
+  margin-left: 6px;
+  padding: 12px;
+  border-radius: 4px;
+  border: solid 1.5px #ccc;
+}
+
+.image-container {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 202px;
+  height: 171px;
+  margin: auto;
+  background-position: center;
+  background-image: url("./images/glove.png");
+}
+
+.title-text {
+  font-size: 48px;
+  color: #000;
+  text-align: center;
+  font-family: "CabinetGrotesk";
+  font-weight: bolder;
+  text-align: center;
+}
+
+.subtitle-text {
+  font-size: 16px;
+  font-family: "Nunito";
+  color: #5a5a5a;
+  text-align: center;
+}
+
+.input-label {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.5;
+  color: #000;
+  font-family: "CabinetGrotesk";
+}
+
+.error-title {
+  font-size: 36px;
+  font-family: "CabinetGrotesk";
+  font-weight: bolder;
+  text-align: center;
+  margin: 16px;
+}
+
+.error-button {
+  margin: 0px auto;
+  margin-bottom: 32px;
+}
+
+.form-control {
+  font-family: "Nunito";
+  font-size: 17px;
+  line-height: 1.5;
+  margin: 8px 0px;
+  height: 5em;
+}
+
+
+/* CSS related to Prompt Page */
+
+#promptPage {
+  display: none;
+}
+
+.prompt-container {
+  margin-top: 32px;
+  background: #fff;
+  border-radius: 4px;
+  width: 100%;
+  padding: 24px 36px;
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.16), -2px 2px 4px 0 rgba(0, 0, 0, 0.16);
+}
+
+#resultText {
+  /* white-space: pre-wrap; */
+}
+
+.prompt-guide-label {
+  display: flex;
+  font-size: 16px;
+  color: #7D4AD4;
+  font-family: "Nunito";
+  font-weight: bold;
+}
+
+.label-container {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+#resultContainer {
+  display: none;
+  font-size: 17px;
+  line-height: 1.5;
+  font-family: "Nunito";
+}
+
+#resultTitle {
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 1.5;
+  margin-bottom: 12px;
+  font-family: "CabinetGrotesk";
+}
+
+.icon-container {
+  padding-right: 6px;
+  display: flex;
+  line-height: 0;
+  align-items: center;
+}
+
+/* CSS related to Prompt Guide Page */
+#promptModal {
+  background-color: #fff;
+}
+
+.prompt-modal-container {
+  max-width: none;
+  margin: 0px;
+}
+
+.prompt-close {
+  border-radius: 28px;
+  font-size: 36px;
+  width: 56px;
+  height: 56px;
+  color: #fff;
+  align-items: center;
+  display: flex;
+  margin-block: 24px;
+  margin-left: auto;
+  margin-right: 24px;
+  background-color: #bababa;
+}
+
+.prompt-close-icon {
+  margin: auto;
+  margin-top: -5px;
+  margin-bottom: 0px;
+}
+
+.modal-content {
+  border-radius: 0px;
+  border: 0px;
+}
+
+.prompt-text-container {
+  max-width: 80%;
+  padding: 0px;
+  margin: auto;
+}
+
+.prompt-title-text {
+  font-family: "CabinetGrotesk";
+  font-size: 36px;
+}
+
+.prompt-description-text {
+  font-family: "Nunito";
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+.prompt-label {
+  margin-bottom: 0px;
+}
+
+.prompt-subtitle {
+  font-family: "Nunito Italic";
+  font-size: 17px;
+}
+
+@font-face {
+  font-family: "CabinetGrotesk";
+  src: url("./fonts/CabinetGrotesk.ttf");
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url("./fonts/Nunito.ttf");
+}
+
+@font-face {
+  font-family: "Nunito Italic";
+  src: url("./fonts/Nunito-Italic.ttf");
+}
+
+@media screen and (max-width: 576px) {
+  .prompt-container {
+    width: 80%;
+  }
+
+  .label-container {
+    align-items: center;
+  }
+
+  .auth-container {
+    flex-direction: column;
+  }
+
+  .auth-input-container {
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+  }
+
+  .image-container {
+    margin-top: 8px;
+    background-size: contain;
+    width: 202px;
+    height: 150px;
+  }
+
+  .title-text {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  button {
+    width: 80%;
+  }
+}
