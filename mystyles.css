@@ -120,7 +120,7 @@ a:hover {
   height: 171px;
   margin: auto;
   background-position: center;
-  background-image: url("./images/glove.png");
+  background-image: url("./images/plato1.png");
 }
 
 .title-text {
@@ -185,7 +185,7 @@ a:hover {
 }
 
 #resultText {
-  /* white-space: pre-wrap; */
+   white-space: pre-wrap;
 }
 
 .prompt-guide-label {

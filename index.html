@@ -13,7 +13,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="./mystyles.css">
   <script src="./mymainscript.js"></script>
-  <title>GPT-3 writing helper</title>
+  <title>GPT-3 philosopher</title>
 </head>
 
 <body>
@@ -26,8 +26,8 @@
         <div class="request-access-text-container">Request Access</div>
       </a>
       <div class="image-container"></div>
-      <div class="title-text">AI Writing Helper</div>
-      <div class="subtitle-text">Making writing fun and easy</div>
+      <div class="title-text">AI trained on the complete works of Plato</div>
+      <div class="subtitle-text">Making wisdom easily accessible</div>
       <form name="authPrompt" method="POST" id="authForm" action="">
         <div class="auth-container">
           <div class="auth-input-container">
@@ -49,13 +49,13 @@
     <form name="input_prompt" method="POST" id="form1" action="">
       <div class="container prompt-container">
         <div class="label-container">
-          <label class="input-label" for="text1">What would you like to write about?</label>
+          <label class="input-label" for="text1">Ask a wise question</label>
           <div class="prompt-guide-label" onclick="showPrompt()">
             <div class="icon-container"><i class="bi bi-book"></i></div>
             <label class="prompt-label">Prompt Guide</label>
           </div>
         </div>
-        <textarea placeholder="The city of Amsterdam" rows="4" class="form-control" oninput="onInputChange()"
+        <textarea placeholder="The meaning of life" rows="4" class="form-control" oninput="onInputChange()"
           id="text1"></textarea>
         <button disabled="true" onclick="button1_function()" type="button" id="submitButton">
           <span id="loader" class="spinner-border spinner-border-sm" role="status"
@@ -92,15 +92,12 @@
           <br>
           <div class="prompt-description-text">
             <p>
-              <span class="prompt-subtitle">A guide to writing with GPT-3</span>
+              <span class="prompt-subtitle">A guide to talking with virtual Plato powered by GPT-3</span>
               <br><br>
-              Here are a few suggestions to generate useful and compelling pieces of text with GPT-3:
+              This app was created with GPT-3, an artificial intelligence text generation system which was customized to talk like Plato. Some tips and pointers to get meaningful and interesting answers from this model are given below.
               <br><br>
-              1. Use verbs in the beginning such as "compose", "draft", "write", "discuss" etc. <br>
-              2. Use a detailed description of what you want to write, e.g. the importance of sunlight in photosynthesis. <br>
-              3. GPT-3 sometimes acts like a very advanced autocomplete. This is useful if you want answers in a specific format, such as a list. You can explicitly provide the beginning of an answer. For instance, you can ask <br>
-              "List the elements that are relevant for photosynthesis, and explain the importance of each. <br> 1." <br>
-              4. If you are trying to generate code, specify the programming language. <br>
+              1. If you don't like the response to a question, try phrasing the question as if it was part of a dialogue. For instance, instead of asking "what is life?", try asking "life is a".
+              <br>
 
               <br><br>
               Happy writing!

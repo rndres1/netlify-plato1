@@ -12,7 +12,7 @@ const configuration = new Configuration({
 });
 
 var AIRTABLE_TOKEN = process.env.AIRTABLE_AUTH_TOKEN
-const p_modelname = "text-davinci-002";
+const p_modelname = "davinci:ft-playpower-labs:remaining-plato-2022-07-25-12-58-51";
 const p_temperature = 0.7;
 const p_maxtokens = 500;
 
@@ -46,6 +46,7 @@ exports.handler = async event => {
         model: p_modelname,
         prompt: user_query,
         max_tokens: p_maxtokens,
+        stop: "####",
         temperature: user_temperature
     });
   
@@ -88,7 +89,7 @@ exports.handler = async event => {
 
     // =========== save the text to Airtable base "" =======
 
-    var base = new Airtable({apiKey: AIRTABLE_TOKEN}).base('app4q2AV24FrpSm2g'); 
+    var base = new Airtable({apiKey: AIRTABLE_TOKEN}).base('app1C12sgwj55rbhJ'); 
     var table = base('GPT3_davinci_');
     var newData = [
         {
@@ -96,7 +97,8 @@ exports.handler = async event => {
                 "prompt": user_query,
                 "response": api_response.data.choices[0].text,
                 "temperature": user_temperature,
-                "token": user_authtoken
+                "token": user_authtoken,
+                "model": p_modelname
             }
         }
     ]

@@ -1,3 +1,14 @@
+window.onload = () => {
+  let element = document.getElementById("passcode");
+  element.addEventListener('keypress', function (event) {
+    if (event.keyCode == 13) {
+      event.preventDefault();
+      validatePasscode();
+    }
+  });
+}
+
+
 // Function to get response
 function button1_function() {
   let loader = document.getElementById("loader");
